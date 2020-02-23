@@ -1,0 +1,11 @@
+C:\Users\Asus\source\repos\SampleTask\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\Asus\source\repos\SampleTask\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\Asus\source\repos\SampleTask\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\Asus\source\repos\SampleTask\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Users\Asus\source\repos\SampleTask\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\Asus\source\repos\SampleTask\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\SampleTask\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\SampleTask\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\Asus\source\repos\SampleTask\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\Asus\source\repos\SampleTask\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\Asus\source\repos\SampleTask\Entities\obj\Debug\netstandard2.0\Entities.pdb

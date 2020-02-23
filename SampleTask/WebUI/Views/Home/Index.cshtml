@@ -1,0 +1,107 @@
+﻿@model ProductListModel
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+	<div class="container">
+		<h2>Ürünler</h2>
+		<div class="row">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductModal">Ürün Ekle</button>
+		</div>
+		<div class="row">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>TC NO</th>
+						<th>Ad Soyad</th>
+						<th>Şifre</th>
+						<th>Para Birimi</th>
+						<th>Fiyat</th>
+						<th>Fiyat x Para birimi</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody class="tbody"></tbody>
+			</table>
+		</div>
+	</div>
+
+<div class="modal fade" id="ProductModal" tabindex="-1" role="dialog" aria-labelledby="ProductModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="ProductModalLabel">Ürün Ekle / Düzelt</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+					<form>
+						<input type="hidden" class="form-control" id="Id" name="TCNO">
+
+						<div class="form-group">
+							<label for="TCNO" class="col-md-12">TC NO</label>
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="TCNO">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Name" class="col-md-12">Ad Soyad</label>
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="Name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Password" class="col-md-12">Şifre</label>
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="ConfirmPassword" class="col-md-12">Şifre Tekrar</label>
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="ConfirmPassword">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Price" class="col-md-12">Fiyat</label>
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="Price">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="ForeignCurrency" class="col-md-12">Para Birimi</label>
+							<div class="col-md-12">
+								<select>
+									<option value="" disabled="disabled" selected="selected" id="ForeignCurrency">Para Birimi</option>
+									<option value="TL">TL</option>
+									<option value="Dolar">Dolar</option>
+									<option value="Euro">Euro</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="CalculateValue" class="col-md-12">Fiyat x Para Birimi</label>
+							<div class="col-md-12">
+								<input type="text" class="form-control" id="CalculateValue">
+							</div>
+						</div>
+					</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="btnAddProduct" onclick="return AddProduct();">Ekle</button>
+				<button type="button" class="btn btn-primary" id="btnUpdateProduct" style="display: none" onclick="EditProduct();">Düzelt</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@section Scripts
+{
+	<script src="~/scripts/CrudProduct.js"></script>
+}
